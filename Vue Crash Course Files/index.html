@@ -5,8 +5,17 @@
     <link rel="stylesheet" type="text/css" href="main.css" />
   </head>
   <body>
-    <div id="app">
-      {{ `${firstName} ${lastName.toUpperCase()}` }}
+    <div id="app" v-cloak>
+      <p>{{ fullName() }}</p>
+      <hr />
+      
+      <!-- Create two input fields and labels for the first name and last name -->
+      <label>First Name</label>
+      <input type="text" />
+
+      <label>Last Name</label>
+      <input type="text" />
+
     </div>
 
     <!-- <div id="app2">
